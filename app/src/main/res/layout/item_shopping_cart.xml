@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/layout_shopping_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/img_shopping_cart"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/checkBox3"
+            android:gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_shopping_cart_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/layout_shopping_cart"
+        android:layout_toRightOf="@+id/layout_shopping_cart"
+        android:text="New Text" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_shopping_cart"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/layout_shopping_cart">
+
+        <TextView
+            android:id="@+id/tv_shopping_cart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/tv_asc"
+            android:background="@drawable/shopcarmiddleshape"
+            android:gravity="center"
+
+            android:padding="5dp"
+            android:text="New Text" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/tv_num"
+            android:background="@drawable/shopcarleftshape"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="—" />
+
+        <TextView
+            android:id="@+id/tv_asc"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shopcarrightshape"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="+" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

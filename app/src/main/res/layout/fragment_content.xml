@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bluesky.app.fragment.ContentFragment">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="101dp"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/checkBox2"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/listView1"
+            android:background="#99000000"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/categorylayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/layout"></RelativeLayout>
+</RelativeLayout>

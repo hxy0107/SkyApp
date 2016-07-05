@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single"
+        >
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:title="首页"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/storage"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="收藏"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/shopping_cart"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="购物车"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/exit"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="退出登录"
+        app:showAsAction="always"></item>
+    </group>
+</menu>
